@@ -10,7 +10,7 @@ window.PORTFOLIO = {
     "email": "leosouzabittencourt@gmail.com",
     "whatsapp": "5551991726157",
     "phoneLabel": "+55 (51) 99172-6157",
-    "linkedin": "[URL DO SEU LINKEDIN]",
+    "linkedin": "https://www.linkedin.com/in/leonardo-souza-bittencourt",
     "photo": "assets/leonardo.webp",
     "resume": "assets/curriculo-leonardo-souza-bittencourt.pdf"
   },
@@ -188,7 +188,7 @@ window.PORTFOLIO = {
     },
     "languages": [
       "Português · comunicação em português do Brasil",
-      "[OUTRO IDIOMA E NÍVEL, SE HOUVER]"
+      "Inglês · intermediário"
     ]
   }
 };
