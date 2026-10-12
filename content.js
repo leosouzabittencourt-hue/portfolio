@@ -174,9 +174,9 @@ window.PORTFOLIO = {
   ],
   "education": {
     "degree": {
-      "title": "[CURSO OU GRADUAÇÃO]",
-      "institution": "[INSTITUIÇÃO]",
-      "period": "[STATUS E PERÍODO]"
+      "title": "Ensino Médio completo",
+      "institution": "Escola Osvaldo Camargo",
+      "period": "Conclusão em 2025"
     },
     "course": {
       "title": "Pacote Office do básico ao ESPECIALISTA & Power BI & Tableau",
