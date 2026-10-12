@@ -3,7 +3,7 @@ window.PORTFOLIO = {
   "profile": {
     "name": "Leonardo Souza Bittencourt",
     "shortName": "Leonardo Bittencourt",
-    "headline": "Tecnologia aplicada à gestão",
+    "headline": "Aprendiz Administrativo-Financeiro",
     "tagline": "Transformo rotinas em soluções digitais que fazem o trabalho fluir.",
     "intro": "Excel, VBA e aplicações web para organizar informações, automatizar processos e tornar os dados mais úteis no dia a dia.",
     "city": "Cachoeirinha, Rio Grande do Sul",
@@ -15,8 +15,8 @@ window.PORTFOLIO = {
     "resume": "assets/curriculo-leonardo-souza-bittencourt.pdf"
   },
   "about": [
-    "Sou Leonardo, de Cachoeirinha/RS, e tenho proficiência em tecnologia aplicada à organização de dados e à automação de rotinas.",
-    "Crio projetos com Excel, VBA e aplicações web para resolver necessidades práticas.",
+    "Sou Leonardo, de Cachoeirinha/RS, e atuo como Aprendiz Administrativo-Financeiro no Shopping do Vale desde agosto de 2025.",
+    "Tenho proficiência em tecnologia aplicada à organização de dados e crio projetos com Excel, VBA e aplicações web para automatizar rotinas.",
     "Meu diferencial é conectar lógica, organização e uma experiência simples para quem usa.",
     "Aprender, testar e melhorar me motiva a evoluir e construir soluções úteis."
   ],
@@ -158,11 +158,11 @@ window.PORTFOLIO = {
   ],
   "experience": [
     {
-      "period": "[PERÍODO DE ATUAÇÃO]",
-      "title": "[SEU CARGO ATUAL OU MAIS RECENTE]",
-      "subtitle": "Rotinas administrativas e uso de tecnologia",
-      "text": "[DESCREVA SUAS RESPONSABILIDADES REAIS]. Sugestão de foco: organização de informações, acompanhamento de processos e uso de ferramentas digitais para apoiar a rotina.",
-      "achievement": "[INCLUA UMA CONQUISTA COMPROVADA, SEM IDENTIFICAR A EMPRESA]"
+      "period": "08/2025 — Atual",
+      "title": "Aprendiz Administrativo-Financeiro",
+      "subtitle": "Shopping do Vale",
+      "text": "Faço contato com lojistas, auxilio nas rotinas de contas a receber e no controle de encomendas, além de executar outras tarefas administrativas e financeiras solicitadas.",
+      "achievement": "Apoio a organização de informações e o acompanhamento das demandas do dia a dia."
     },
     {
       "period": "[PERÍODO DOS PROJETOS]",
