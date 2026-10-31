@@ -62,8 +62,8 @@ function renderDemo(){
  const actions=node('div','demo-actions'),buyCompany=node('button','','Compra da empresa · R$ 45,50'),buyEmployee=node('button','','Compra pessoal · R$ 32,00'),repay=node('button','','Reembolsar R$ 20,00'),reset=node('button','','Recomeçar');repay.id='demo-repay';buyCompany.dataset.action='company';buyEmployee.dataset.action='employee';reset.dataset.action='reset';
  const status=node('p','demo-status','Escolha uma ação para observar os saldos.');status.setAttribute('role','status');
  const format=amount=>(amount/100).toLocaleString('pt-BR',{style:'currency',currency:'BRL'});
- const update=message=>{companyValue.textContent=format(demoState.company);pendingValue.textContent=format(demoState.pending);repay.disabled=demoState.pending<2000;if(message)status.textContent=message;};
- buyCompany.addEventListener('click',()=>{demoState.company-=4550;update('Compra da empresa: reduz o dinheiro disponível e não gera reembolso.');});
+ const update=message=>{companyValue.textContent=format(demoState.company);pendingValue.textContent=format(demoState.pending);repay.disabled=demoState.pending<2000;buyCompany.disabled=demoState.company<4550;if(message)status.textContent=message;};
+ buyCompany.addEventListener('click',()=>{if(demoState.company<4550){update('Saldo insuficiente para esta compra.');return;}demoState.company-=4550;update('Compra da empresa: reduz o dinheiro disponível e não gera reembolso.');});
  buyEmployee.addEventListener('click',()=>{demoState.pending+=3200;update('Compra pessoal: aumenta o valor a devolver e mantém o dinheiro da empresa.');});
  repay.addEventListener('click',()=>{if(demoState.pending<2000)return;demoState.pending-=2000;update('Reembolso pela conta bancária: reduz a dívida; o caixinha físico permanece igual.');});
  reset.addEventListener('click',()=>{demoState={company:50000,pending:0};update('Simulação reiniciada. Todos os valores são fictícios.');});actions.append(buyCompany,buyEmployee,repay,reset);panel.append(actions,status);update();return panel;
