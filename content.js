@@ -11,8 +11,7 @@ window.PORTFOLIO = {
     "whatsapp": "5551991726157",
     "phoneLabel": "+55 (51) 99172-6157",
     "linkedin": "https://www.linkedin.com/in/leonardo-souza-bittencourt",
-    "photo": "assets/leonardo.webp",
-    "resume": "assets/curriculo-leonardo-souza-bittencourt.pdf"
+    "photo": "assets/leonardo.webp"
   },
   "about": [
     "Sou Leonardo, de Cachoeirinha/RS, e atuo como Aprendiz Administrativo-Financeiro no Shopping do Vale desde agosto de 2025.",
