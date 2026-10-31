@@ -31,7 +31,8 @@ const degreeCard=node('article','education-card');degreeCard.append(node('p','ed
 const courseCard=node('article','education-card featured-course');courseCard.append(node('p','edu-label','CURSO CONCLUÍDO'),node('h3','',course.title),node('p','',course.institution+' · '+course.hours+' · '+course.date),node('p','',course.detail));
 const cert=node('a','certificate-link','Ver certificado');cert.href=course.certificate;cert.target='_blank';cert.rel='noopener noreferrer';cert.append(icon('diagonal'));courseCard.append(cert);
 const languages=node('article','education-card');languages.append(node('p','edu-label','IDIOMAS'),node('h3','','Comunicação'));content.education.languages.forEach(text=>languages.append(node('p','',text)));$('#education-grid').append(degreeCard,courseCard);
-(content.education.additionalCourses || []).forEach(item=>{
+const additionalCourses = content.education.additionalCourses || [];
+additionalCourses.forEach(item=>{
  const card=node('article','education-card featured-course');
  card.append(node('p','edu-label','CURSO CONCLUÍDO'),node('h3','',item.title),node('p','',item.institution+' · '+item.hours+' · '+item.date),node('p','',item.detail));
  if(safeWebUrl(item.certificate)){const link=node('a','certificate-link','Ver certificado');link.href=item.certificate;link.target='_blank';link.rel='noopener noreferrer';link.append(icon('diagonal'));card.append(link);}
