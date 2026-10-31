@@ -10,7 +10,7 @@ const whatsapp='https://wa.me/'+content.profile.whatsapp.replace(/\D/g,'')+'?tex
 $$('[data-profile]').forEach(item=>{const value=content.profile[item.dataset.profile];if(value)item.textContent=value;});
 const nameParts=content.profile.name.split(' '),h1=$('h1');h1.replaceChildren(document.createTextNode(nameParts.slice(0,-1).join(' ')),document.createElement('br'),node('span','',nameParts.at(-1)+'.'));
 $('#profile-photo').src=content.profile.photo;$('#profile-photo').alt='Retrato de '+content.profile.name;
-$('#resume-link').href=content.profile.resume;$('#whatsapp-cta').href=whatsapp;
+$('#whatsapp-cta').href=whatsapp;
 $('#about-content').append(node('p','',content.about.join(' ')));
 content.skills.forEach(group=>{const card=node('article','skill-card'),header=node('div','skill-heading');header.append(node('h3','',group.category),node('span','',group.number));card.append(header,tags(group.items));$('#skills-grid').append(card);});
 let lastOpener=null, demoState=null;
