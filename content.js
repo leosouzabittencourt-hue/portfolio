@@ -88,9 +88,7 @@ window.PORTFOLIO = {
         "Login e controle de duplicidade",
         "Saldos separados e reembolsos por pessoa",
         "Backup do banco, fotos e planilha"
-      ],
-      "cvDescription": "Registro de despesas pelo celular com foto, fila offline e servidor local. Integração com Excel 2019 por Power Query/VBA, separação de fundos e controle de reembolsos.",
-      "cvResult": "Envio pelo iPhone, consulta no Excel e pagamentos conferidos em ambiente de testes."
+      ]
     },
     {
       "id": "vendas",
@@ -119,9 +117,7 @@ window.PORTFOLIO = {
         "Comparativo realizado × planejado",
         "Painéis com gráficos",
         "Rotinas de cadastro e atualização em VBA"
-      ],
-      "cvDescription": "Ferramenta em Excel e VBA com cadastros, lançamentos, histórico, painéis e comparativos por período.",
-      "cvResult": "Organização de entrada, consulta e análise em um fluxo integrado."
+      ]
     },
     {
       "id": "encomendas",
@@ -150,9 +146,7 @@ window.PORTFOLIO = {
         "Status de recebimento e retirada",
         "Histórico de movimentação",
         "Relatórios visuais"
-      ],
-      "cvDescription": "Sistema em Excel e VBA com cadastro, protocolo, consulta, atualização de status e relatórios.",
-      "cvResult": "Fluxo integrado de registro e acompanhamento para apoiar a rastreabilidade."
+      ]
     }
   ],
   "experience": [
@@ -161,10 +155,10 @@ window.PORTFOLIO = {
       "title": "Aprendiz Administrativo-Financeiro",
       "subtitle": "Shopping do Vale",
       "text": "Faço contato com lojistas, auxilio nas rotinas de contas a receber e no controle de encomendas, além de executar outras tarefas administrativas e financeiras solicitadas.",
-      "achievement": "Apoio a organização de informações e o acompanhamento das demandas do dia a dia."
+      "achievement": "Apoio à organização de informações e o acompanhamento das demandas do dia a dia."
     },
     {
-      "period": "[PERÍODO DOS PROJETOS]",
+      "period": "2026 — Atual",
       "title": "Desenvolvimento de projetos próprios",
       "subtitle": "Excel, VBA e aplicações web",
       "text": "Criação de ferramentas para controle gerencial, gestão de encomendas e registro de despesas, com atenção à organização dos dados e à experiência de uso.",
