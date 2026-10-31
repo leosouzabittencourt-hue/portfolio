@@ -185,6 +185,16 @@ window.PORTFOLIO = {
       "certificate": "assets/certificado-office.pdf",
       "detail": "Formação concluída, conforme certificado apresentado."
     },
+    "additionalCourses": [
+      {
+        "title": "Gestão Financeira",
+        "institution": "Sebrae RS",
+        "date": "31/10/2026",
+        "hours": "3 horas",
+        "certificate": "https://sebraersead.sebrae.com.br/?AT=4B47273E2149FEBC9CC1C93505355C",
+        "detail": "Curso concluído com 100% de conclusão. Conteúdos: gestão financeira, fluxo de caixa, giro de caixa e controle de estoques."
+      }
+    ],
     "languages": [
       "Português · comunicação em português do Brasil",
       "Inglês · intermediário"
