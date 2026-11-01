@@ -4,6 +4,8 @@ Sistema web de recebíveis, metas e pendências, criado como projeto de portfól
 
 ![Painel do Fluxo com indicadores de recebíveis e metas](docs/fluxo-dashboard.jpg)
 
+**[Abrir demonstração pública](https://fluxo-financeiro.leosouzabittencourt.chatgpt.site/)** · [Portfólio](https://leosouzabittencourt-hue.github.io/portfolio/)
+
 ## O problema
 
 Uma lista de boletos informa valores e datas, mas nem sempre mostra o que precisa de atenção primeiro. O Fluxo reúne carteira do mês, recebimentos confirmados, títulos em atraso e metas por categoria em uma única visão.

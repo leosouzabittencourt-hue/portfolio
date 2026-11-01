@@ -1,6 +1,6 @@
 # Publicação para LinkedIn
 
-Copie o texto abaixo e anexe a imagem `fluxo-dashboard.jpg` desta pasta. O link aponta para o código público na branch do projeto. A demonstração hospedada no ChatGPT está privada para revisão; não use esse endereço como demonstração pública enquanto o acesso não for alterado.
+Copie o texto abaixo e anexe a imagem `fluxo-dashboard.jpg` desta pasta. A demonstração está pública e o código está integrado à versão principal do portfólio.
 
 ---
 
@@ -16,8 +16,11 @@ Tecnologias: HTML, CSS, JavaScript, SVG e LocalStorage, com testes em Node.js.
 
 É um protótipo de portfólio com dados inteiramente fictícios. O objetivo é demonstrar como conhecimento do processo e tecnologia podem se complementar.
 
+Experimente a demonstração:
+https://fluxo-financeiro.leosouzabittencourt.chatgpt.site/
+
 Código e instruções:
-https://github.com/leosouzabittencourt-hue/portfolio/tree/feat/fluxo-financeiro/projetos/fluxo
+https://github.com/leosouzabittencourt-hue/portfolio/tree/main/projetos/fluxo
 
 #Portfolio #JavaScript #DesenvolvimentoWeb #GestaoFinanceira #Tecnologia
 
