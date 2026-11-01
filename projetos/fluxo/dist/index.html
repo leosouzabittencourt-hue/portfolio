@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111715">
+  <meta name="description" content="Fluxo: gestão de recebíveis, metas e pendências financeiras. Projeto de portfólio de Leonardo Souza Bittencourt com dados fictícios.">
+  <meta property="og:title" content="Fluxo — Gestão Financeira">
+  <meta property="og:description" content="Uma visão clara dos recebíveis, das metas e do próximo passo. Projeto de portfólio com dados fictícios.">
+  <title>Fluxo — Gestão Financeira</title>
+  <link rel="icon" type="image/svg+xml" href="./favicon.svg">
+  <link rel="stylesheet" href="./styles.css">
+  <script type="module" src="./app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Ir para o conteúdo</a>
+  <div id="app"><div class="loading"><span class="logo-mark">f</span><p>Carregando seu financeiro…</p></div></div>
+  <dialog id="modal" aria-labelledby="modal-title"></dialog>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <input id="import-file" type="file" accept=".csv,text/csv" hidden>
+  <input id="backup-file" type="file" accept=".json,application/json" hidden>
+  <noscript>Ative o JavaScript no navegador para utilizar o Fluxo.</noscript>
+</body>
+</html>
