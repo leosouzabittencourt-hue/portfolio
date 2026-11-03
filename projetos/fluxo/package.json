@@ -1,0 +1,9 @@
+{
+  "name": "fluxo-financeiro",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Gestão de recebíveis, metas e pendências com dados fictícios.",
+  "scripts": { "test": "node --test", "check": "node --check dist/app.js && node --check dist/core.js && node --check dist/seed.js" },
+  "engines": { "node": ">=20" }
+}
