@@ -8,7 +8,7 @@ window.PORTFOLIO = {
     "intro": "Excel, VBA e aplicações web para organizar informações, automatizar processos e tornar os dados mais úteis no dia a dia.",
     "city": "Cachoeirinha, Rio Grande do Sul",
     "email": "leosouzabittencourt@gmail.com",
-    "linkedin": "[URL DO SEU LINKEDIN]",
+    "linkedin": "https://www.linkedin.com/in/leonardo-souza-bittencourt",
     "photo": "assets/leonardo.webp"
   },
   "about": [
@@ -185,7 +185,7 @@ window.PORTFOLIO = {
     },
     "languages": [
       "Português · comunicação em português do Brasil",
-      "[OUTRO IDIOMA E NÍVEL, SE HOUVER]"
+      "Inglês · intermediário"
     ]
   }
 };

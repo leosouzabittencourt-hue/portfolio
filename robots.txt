@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://leosouzabittencourt-hue.github.io/portfolio/sitemap.xml
