@@ -155,7 +155,7 @@ window.PORTFOLIO = {
       "summary": "Sistema web para acompanhar recebíveis, vencimentos, metas mensais e pendências, com importação de CSV e relatórios.",
       "image": "projetos/fluxo/docs/fluxo-dashboard.jpg",
       "imageAlt": "Painel do Fluxo com carteira, recebimentos e metas; todos os valores e clientes são fictícios.",
-      "demoUrl": "https://fluxo-financeiro.leosouzabittencourt.chatgpt.site/",
+      "demoUrl": "https://leosouzabittencourt-hue.github.io/portfolio/projetos/fluxo/",
       "sourceUrl": "https://github.com/leosouzabittencourt-hue/portfolio/tree/main/projetos/fluxo",
       "tools": [
         "JavaScript",

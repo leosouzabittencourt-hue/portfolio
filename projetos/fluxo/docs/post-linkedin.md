@@ -17,7 +17,7 @@ Tecnologias: HTML, CSS, JavaScript, SVG e LocalStorage, com testes em Node.js.
 É um protótipo de portfólio com dados inteiramente fictícios. O objetivo é demonstrar como conhecimento do processo e tecnologia podem se complementar.
 
 Experimente a demonstração:
-https://fluxo-financeiro.leosouzabittencourt.chatgpt.site/
+https://leosouzabittencourt-hue.github.io/portfolio/projetos/fluxo/
 
 Código e instruções:
 https://github.com/leosouzabittencourt-hue/portfolio/tree/main/projetos/fluxo

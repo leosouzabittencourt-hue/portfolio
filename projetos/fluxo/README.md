@@ -4,7 +4,7 @@ Sistema web de recebíveis, metas e pendências, criado como projeto de portfól
 
 ![Painel do Fluxo com indicadores de recebíveis e metas](docs/fluxo-dashboard.jpg)
 
-**[Abrir demonstração pública](https://fluxo-financeiro.leosouzabittencourt.chatgpt.site/)** · [Portfólio](https://leosouzabittencourt-hue.github.io/portfolio/)
+**[Abrir demonstração pública](https://leosouzabittencourt-hue.github.io/portfolio/projetos/fluxo/)** · [Portfólio](https://leosouzabittencourt-hue.github.io/portfolio/)
 
 ## O problema
 
