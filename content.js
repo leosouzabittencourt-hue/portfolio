@@ -145,6 +145,37 @@ window.PORTFOLIO = {
         "Histórico de movimentação",
         "Relatórios visuais"
       ]
+    },
+    {
+      "id": "fluxo",
+      "number": "04",
+      "category": "web",
+      "label": "GESTÃO FINANCEIRA + JAVASCRIPT",
+      "title": "Fluxo — Gestão financeira",
+      "summary": "Sistema web para acompanhar recebíveis, vencimentos, metas mensais e pendências, com importação de CSV e relatórios.",
+      "image": "projetos/fluxo/docs/fluxo-dashboard.jpg",
+      "imageAlt": "Painel do Fluxo com carteira, recebimentos e metas; todos os valores e clientes são fictícios.",
+      "demoUrl": "https://fluxo-financeiro.leosouzabittencourt.chatgpt.site/",
+      "sourceUrl": "https://github.com/leosouzabittencourt-hue/portfolio/tree/main/projetos/fluxo",
+      "tools": [
+        "JavaScript",
+        "HTML / CSS",
+        "SVG",
+        "LocalStorage",
+        "Node.js"
+      ],
+      "status": "Demonstração pública · 16 testes automatizados",
+      "problem": "O acompanhamento financeiro precisa mostrar quais títulos estão em aberto, quais já foram recebidos e quais vencimentos exigem atenção, mantendo critérios claros para os indicadores.",
+      "solution": "Estruturei um sistema com cadastro de títulos, baixa integral e estorno de recebimentos, metas por categoria e visão consolidada por mês de vencimento. Valores usam centavos inteiros e as importações são validadas antes de alterar a base.",
+      "result": "A demonstração reúne 96 títulos fictícios. Cadastro, recebimento, filtros, metas, importação, exportação e backup foram conferidos no navegador. As regras financeiras contam com 16 testes automatizados.",
+      "note": "Protótipo de portfólio com empresa, clientes e valores fictícios. Os dados são armazenados apenas no navegador. Esta versão não inclui autenticação, sincronização entre dispositivos ou integração com bancos e SAP.",
+      "capabilities": [
+        "Dashboard com recebido, a receber e atraso",
+        "Cadastro, baixa integral e estorno de títulos",
+        "Metas por categoria e comparativo mensal",
+        "Importação e exportação CSV",
+        "Backup e restauração em JSON"
+      ]
     }
   ],
   "experience": [
