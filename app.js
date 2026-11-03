@@ -29,7 +29,14 @@ const degree=content.education.degree,course=content.education.course;
 const degreeCard=node('article','education-card');degreeCard.append(node('p','edu-label','FORMAÇÃO ACADÊMICA'),node('h3','',degree.title),node('p','',degree.institution),node('p','',degree.period));
 const courseCard=node('article','education-card featured-course');courseCard.append(node('p','edu-label','CURSO CONCLUÍDO'),node('h3','',course.title),node('p','',course.institution+' · '+course.hours+' · '+course.date),node('p','',course.detail));
 const cert=node('a','certificate-link','Ver certificado');cert.href=course.certificate;cert.target='_blank';cert.rel='noopener noreferrer';cert.append(icon('diagonal'));courseCard.append(cert);
-const languages=node('article','education-card');languages.append(node('p','edu-label','IDIOMAS'),node('h3','','Comunicação'));content.education.languages.forEach(text=>languages.append(node('p','',text)));$('#education-grid').append(degreeCard,courseCard,languages);
+const languages=node('article','education-card');languages.append(node('p','edu-label','IDIOMAS'),node('h3','','Comunicação'));content.education.languages.forEach(text=>languages.append(node('p','',text)));$('#education-grid').append(degreeCard,courseCard);
+(content.education.additionalCourses || []).forEach(item=>{
+ const card=node('article','education-card featured-course');
+ card.append(node('p','edu-label','CURSO CONCLUÍDO'),node('h3','',item.title),node('p','',item.institution+' · '+item.hours+' · '+item.date),node('p','',item.detail));
+ if(safeWebUrl(item.certificate)){const link=node('a','certificate-link','Ver certificado');link.href=item.certificate;link.target='_blank';link.rel='noopener noreferrer';link.append(icon('diagonal'));card.append(link);}
+ $('#education-grid').append(card);
+});
+$('#education-grid').append(languages);
 function contactRow(label,value,href,iconName) {const row=node(href?'a':'div','contact-row'+(!href?' placeholder':''));if(href){row.href=href;if(!href.startsWith('mailto:')){row.target='_blank';row.rel='noopener noreferrer';}}const mark=node('span','contact-icon');mark.append(icon(iconName));const copy=node('div');copy.append(node('small','',label),node('strong','',value));if(!href)copy.append(node('span','awaiting','Perfil a informar'));row.append(mark,copy);if(href)row.append(icon('diagonal'));return row;}
 $('#contact-list').append(contactRow('E-mail',content.profile.email,'mailto:'+content.profile.email,'mail'),contactRow('LinkedIn',safeWebUrl(content.profile.linkedin)?'Acessar meu perfil':content.profile.linkedin,safeWebUrl(content.profile.linkedin),'linkedin'));
 $('#year').textContent=new Date().getFullYear();
