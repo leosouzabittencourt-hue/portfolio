@@ -13,12 +13,20 @@ $('#email-cta').href='mailto:'+content.profile.email;
 $('#about-content').append(node('p','',content.about.join(' ')));
 content.skills.forEach(group=>{const card=node('article','skill-card'),header=node('div','skill-heading');header.append(node('h3','',group.category),node('span','',group.number));card.append(header,tags(group.items));$('#skills-grid').append(card);});
 let lastOpener=null, demoState=null;
+function projectLinks(project) {
+ const actions=node('div','project-links');
+ for(const [label,value] of [['Abrir demonstração',project.demoUrl],['Ver código no GitHub',project.sourceUrl]]) {
+  const href=safeWebUrl(value);if(!href)continue;
+  const link=node('a','project-live',label);link.href=href;link.target='_blank';link.rel='noopener noreferrer';link.append(icon('diagonal'));actions.append(link);
+ }
+ return actions;
+}
 function renderProject(project) {
  const card=node('article','project-card'+(project.id==='caixinha'?' featured':''));card.dataset.category=project.category;card.dataset.id=project.id;
  const visual=node('div','project-image'),img=node('img');img.src=project.image;img.alt=project.imageAlt;img.loading='lazy';img.width=800;img.height=500;
  visual.append(img,node('span','demo-badge','DEMONSTRAÇÃO · DADOS FICTÍCIOS'));
  const body=node('div','project-body');body.append(node('p','project-label',project.number+' / '+project.label),node('h3','',project.title),node('p','project-summary',project.summary),tags(project.tools),node('p','project-status',project.status));
- const more=node('button','project-more','Ver projeto');more.type='button';more.setAttribute('aria-label','Ver detalhes: '+project.title);more.append(icon('diagonal'));more.addEventListener('click',()=>openProject(project,more));body.append(more);card.append(visual,body);$('#projects-grid').append(card);
+ const more=node('button','project-more','Ver projeto');more.type='button';more.setAttribute('aria-label','Ver detalhes: '+project.title);more.append(icon('diagonal'));more.addEventListener('click',()=>openProject(project,more));body.append(more);if(project.demoUrl||project.sourceUrl)body.append(projectLinks(project));card.append(visual,body);$('#projects-grid').append(card);
 }
 content.projects.forEach(renderProject);
 $('[data-filter="all"] span').textContent=String(content.projects.length).padStart(2,'0');
@@ -50,6 +58,7 @@ function openProject(project,opener) {
  const capabilities=node('ul','case-capabilities');project.capabilities.forEach(text=>{const li=node('li');li.append(icon('check'),document.createTextNode(text));capabilities.append(li);});
  body.append(title,image,tags(project.tools),columns,caseBlock('Resultado e funcionamento',project.result,'case-block case-result'),capabilities);
  if(project.id==='caixinha')body.append(renderDemo());
+ if(project.demoUrl||project.sourceUrl)body.append(projectLinks(project));
  body.append(node('p','case-note',project.note));
  document.body.classList.add('modal-open');if(typeof dialog.showModal==='function')dialog.showModal();else{dialog.setAttribute('open','');dialog.style.position='fixed';dialog.style.top='5vh';dialog.style.zIndex='50';}dialog.scrollTop=0;$('#close-dialog').focus();
 }
@@ -76,3 +85,4 @@ if('IntersectionObserver' in window){
  const revealObserver=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('visible');revealObserver.unobserve(entry.target);}}),{threshold:.08});$$('.reveal').forEach(section=>{section.classList.add('js-reveal');revealObserver.observe(section);});
  const activeObserver=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting)$$('#navigation a').forEach(link=>link.classList.toggle('active',link.getAttribute('href')==='#'+entry.target.id));}),{rootMargin:'-12% 0px -58% 0px'});$$('main section[id]').forEach(section=>activeObserver.observe(section));
 }
+
